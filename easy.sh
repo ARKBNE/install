@@ -12,7 +12,7 @@ POSITIONAL_ARGS=()
 
 [ $# -lt 4 ] || [ $# -gt 4 ] && {
     echo "Usage: easy -d domain_name -p data_port -c control_port -f fake_site_domain_name" >&2
-    return 1
+    exit 1
 }
 
 while [[ $# -gt 0 ]]; do
